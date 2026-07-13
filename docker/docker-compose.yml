@@ -1,0 +1,10 @@
+services:
+  pdf-reader-dev:
+    build:
+      context: .
+      dockerfile: python/Dockerfile
+    container_name: pdf-reader-dev
+    volumes:
+      - ../:/app
+    working_dir: /app
+    command: sleep infinity
